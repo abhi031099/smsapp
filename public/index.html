@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>SMP</title>
  
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -30,7 +30,6 @@
         border-color: #26a69a;
       }
     .status{
-      height: 50px;
       margin-bottom: 10px;
     }
     .staticon{
@@ -39,6 +38,17 @@
      .myform{
        margin-top: 50px;
      }
+
+#about {
+  background-color: #26a69a;
+}
+ul#a{
+  list-style-type: circle;
+}
+  .footnav a:link, .footnav a:visited{
+    color: white;
+
+  }
       @media screen and (max-width: 670px){
         .yosha{
           min-height: 300px;
@@ -75,6 +85,7 @@
       $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.parallax').parallax();
+        $('.scrollspy').scrollSpy();
         
       }); 
  

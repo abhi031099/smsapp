@@ -12,7 +12,7 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state;
     return (
-        <div className="container myform">
+        <div className="container myform scrollspy" id="contact">
         <div className="row">
         <div className="col s12 l4">
         <h3 className="teal-text">Get In Touch</h3>
