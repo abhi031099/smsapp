@@ -42,7 +42,10 @@ class Plot extends Component{
         const humidata = humidity.field3;
         let statHumi =" ";
        //for humidty  
-       if(humidata>50){
+       if(humidata>=255){
+           statHumi = <p className="yellow-text center">Unavailable <i className="material-icons yellow-text">warning</i></p>;
+       }
+       else if(humidata>80){
             statHumi = <p className="red-text center">DANGEROUS <i className="material-icons red-text">error</i></p>;
        } else{
         statHumi = <p className="green-text center">SAFE <i className="material-icons green-text">done_outline</i></p>;
@@ -51,7 +54,10 @@ class Plot extends Component{
        const {temperature} = this.state
        const tempdata = temperature.field2;
        let statTemp =" ";
-       if(tempdata>60){
+       if(tempdata>=255){
+        statTemp = <p className="yellow-text center">Unavailable <i className="material-icons yellow-text">warning</i></p>;
+    }
+      else if(tempdata>80){
         statTemp = <p className="red-text center">DANGEROUS <i className="material-icons red-text">error</i></p>;
    } else{
     statTemp = <p className="green-text center">SAFE <i className="material-icons green-text">done_outline</i></p>;
