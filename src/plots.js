@@ -76,7 +76,7 @@ class Plot extends Component{
    const {distance}= this.state
    const distData = distance.field4;
    let statDist = " ";
-   if (distData<50){
+   if (distData>50){
     statDist = <p className="red-text center">Open<i className="material-icons red-text">error</i></p>;
    }else{
     statDist = <p className="green-text center">Close <i className="material-icons green-text">done_outline</i></p>;
